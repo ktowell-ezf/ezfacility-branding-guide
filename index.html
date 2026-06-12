@@ -484,15 +484,27 @@
       font-family: 'Fira Sans', Arial, sans-serif;
       font-size: 15px;
       font-weight: 600;
-      padding: 12px 28px;
+      padding: 14px;
       cursor: pointer;
       transition: var(--transition);
     }
 
     .btn-primary:hover { background: var(--green); opacity: 0.8; }
 
-    .btn-primary.lg { font-size: 18px; padding: 16px 36px; }
-    .btn-primary.sm { font-size: 13px; padding: 8px 18px; }
+    .btn-primary.lg,
+    .btn-secondary.lg,
+    .btn-rev-primary.lg,
+    .btn-rev-secondary.lg { font-size: 18px; padding: 16px; }
+
+    .btn-primary.md,
+    .btn-secondary.md,
+    .btn-rev-primary.md,
+    .btn-rev-secondary.md { font-size: 15px; padding: 14px; }
+
+    .btn-primary.sm,
+    .btn-secondary.sm,
+    .btn-rev-primary.sm,
+    .btn-rev-secondary.sm { font-size: 13px; padding: 12px; }
 
     /* Secondary button */
     .btn-secondary {
@@ -503,7 +515,7 @@
       font-family: 'Fira Sans', Arial, sans-serif;
       font-size: 15px;
       font-weight: 600;
-      padding: 10px 26px;
+      padding: 14px;
       cursor: pointer;
       transition: var(--transition);
     }
@@ -519,7 +531,7 @@
       font-family: 'Fira Sans', Arial, sans-serif;
       font-size: 15px;
       font-weight: 600;
-      padding: 12px 28px;
+      padding: 14px;
       cursor: pointer;
       transition: var(--transition);
     }
@@ -535,7 +547,7 @@
       font-family: 'Fira Sans', Arial, sans-serif;
       font-size: 15px;
       font-weight: 600;
-      padding: 10px 26px;
+      padding: 14px;
       cursor: pointer;
       transition: var(--transition);
     }
@@ -604,7 +616,7 @@
       font-size: 16px;
       font-weight: 400;
       color: #888888;
-      padding: 15px;
+      padding: 16px;
       outline: none;
       transition: border-color 0.2s;
       background: white;
@@ -1604,11 +1616,11 @@
     <div class="btn-grid">
       <div class="btn-showcase">
         <label>Primary</label>
-        <button class="btn-primary">Primary Button</button>
+        <button class="btn-primary md">Primary Button</button>
       </div>
       <div class="btn-showcase">
         <label>Secondary</label>
-        <button class="btn-secondary">Secondary Button</button>
+        <button class="btn-secondary md">Secondary Button</button>
       </div>
     </div>
 
@@ -1616,11 +1628,11 @@
     <div class="btn-dark-panel">
       <div class="btn-showcase">
         <label style="color:rgba(255,255,255,0.5);">Reversed Primary</label>
-        <button class="btn-rev-primary">Reversed Primary</button>
+        <button class="btn-rev-primary md">Reversed Primary</button>
       </div>
       <div class="btn-showcase">
         <label style="color:rgba(255,255,255,0.5);">Reversed Secondary</label>
-        <button class="btn-rev-secondary">Reversed Secondary</button>
+        <button class="btn-rev-secondary md">Reversed Secondary</button>
       </div>
     </div>
 
@@ -1631,8 +1643,8 @@
         <button class="btn-primary lg">Large Button</button>
       </div>
       <div class="btn-showcase">
-        <label>Default</label>
-        <button class="btn-primary">Default Button</button>
+        <label>Medium</label>
+        <button class="btn-primary md">Medium Button</button>
       </div>
       <div class="btn-showcase">
         <label>Small</label>
@@ -1680,6 +1692,27 @@
           <td>4px</td>
           <td>4px</td>
           <td>4px</td>
+        </tr>
+        <tr>
+          <td>Padding (Large)</td>
+          <td>16px</td>
+          <td>16px</td>
+          <td>16px</td>
+          <td>16px</td>
+        </tr>
+        <tr>
+          <td>Padding (Medium)</td>
+          <td>14px</td>
+          <td>14px</td>
+          <td>14px</td>
+          <td>14px</td>
+        </tr>
+        <tr>
+          <td>Padding (Small)</td>
+          <td>12px</td>
+          <td>12px</td>
+          <td>12px</td>
+          <td>12px</td>
         </tr>
         <tr>
           <td>Font Weight</td>
@@ -1744,6 +1777,16 @@
           <td>solid 2px #D41840</td>
         </tr>
         <tr>
+          <td>Border Radius</td>
+          <td>4px</td>
+          <td>4px</td>
+        </tr>
+        <tr>
+          <td>Focus Border</td>
+          <td>#00C28A</td>
+          <td>—</td>
+        </tr>
+        <tr>
           <td>Text Color</td>
           <td>#888888</td>
           <td>#D41840</td>
@@ -1760,18 +1803,13 @@
         </tr>
         <tr>
           <td>Padding</td>
-          <td>15px</td>
-          <td>15px</td>
+          <td>16px</td>
+          <td>16px</td>
         </tr>
         <tr>
           <td>Width</td>
           <td>100%</td>
           <td>100%</td>
-        </tr>
-        <tr>
-          <td>Focus Border</td>
-          <td>#00C28A</td>
-          <td>—</td>
         </tr>
       </tbody>
     </table>
